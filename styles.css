@@ -5,8 +5,9 @@ html, body {
  }
 
  #container {
-    min-height:100%;
     position:relative;
+    width: 100%;
+    height: 90%;
  }
 
 #body {
@@ -22,10 +23,6 @@ html, body {
     width:100%;
 }
 
-#header {
-    padding:10px;
- }
-
  .header a {
     color: black;
     text-align: center;
@@ -38,6 +35,7 @@ html, body {
 
 .header {
     float: top;
+    position: fixed;
 }
 .header-right li {
       display: inline-block;
@@ -60,12 +58,19 @@ html, body {
 
 .footer-right {
     float: right;
-    text-align: right;
     bottom: 0;
+    margin-right: 20px;
 }
 
 .footer-right li {
     display: inline-block;
     color: black;
-    align-content: right;
+}
+
+
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
